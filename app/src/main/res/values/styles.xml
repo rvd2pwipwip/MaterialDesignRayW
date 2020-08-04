@@ -1,23 +1,61 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="Theme.VideoApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/brandPrimary</item>
+        <item name="colorPrimaryDark">@color/brandPrimaryDark</item>
+        <item name="colorAccent">@color/pinkSecondary</item>
+
+        <!-- Small components shape -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.VideoApp.SmallComponent</item>
+
+        <!-- Custom theme components-->
+        <item name="textInputStyle">@style/Widget.VideoApp.InputLayout</item>
+        <item name="materialButtonStyle">@style/Widget.VideoApp.Button</item>
+        <item name="materialCardViewStyle">@style/Widget.VideoApp.CardView</item>
+
     </style>
 
-    <style name="CTAButton" parent="Widget.MaterialComponents.Button">
-        <item name="android:textAllCaps">false</item>
-        <item name="android:layout_height">60dp</item>
-        <item name="cornerRadius">30dp</item>
+    <!-- Square corner small components -->
+    <style name="ShapeAppearance.VideoApp.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0%</item>
     </style>
 
-    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <!-- Shape overlay for button round corners -->
+    <style name="Widget.VideoApp.Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="android:textAllCaps">false</item>
-        <item name="android:layout_height">60dp</item>
-        <item name="cornerRadius">30dp</item>
+        <item name="backgroundTint">?attr/colorAccent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.VideoApp.Button</item>
+    </style>
+
+    <!-- Pill shaped button -->
+    <style name="ShapeAppearanceOverlay.VideoApp.Button" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Widget.VideoApp.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="Widget.VideoApp.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">0dp</item>
+    </style>
+
+    <style name="Widget.VideoApp.InputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">?attr/colorPrimary</item>
+        <item name="boxStrokeColor">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="CardTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/card_title</item>
+        <item name="android:gravity">center</item>
     </style>
 
 </resources>

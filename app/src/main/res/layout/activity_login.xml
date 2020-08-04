@@ -66,19 +66,22 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/loginButton"
-            style="@style/OutlinedButton"
-            android:layout_marginTop="20dp"
+            style="@style/Widget.VideoApp.OutlinedButton"
             android:layout_width="match_parent"
-            android:text="Log In"
-            android:textColor="@color/colorPrimary" />
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="20dp"
+            android:text="Log In" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/signupButton"
-            style="@style/CTAButton"
             android:layout_width="match_parent"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="@string/signup"
-            android:textColor="@color/design_default_color_background" />
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="bottom"
+            android:text="@string/signup" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 </ScrollView>

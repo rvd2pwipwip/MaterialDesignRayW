@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-  <color name="colorPrimary">#008FFF</color>
-  <color name="colorPrimaryDark">#1B1F20</color>
-  <color name="colorAccent">#008AAA</color>
+    <color name="brandPrimary">#0091ff</color>
+    <color name="brandPrimaryDark">#0064cb</color>
+    <color name="brandPrimaryLight">#69c1ff</color>
+    <color name="pinkSecondary">#d81b60</color>
+    <color name="pinkSecondaryLight">#ff5c8d</color>
+    <color name="pninkSecondaryDark">#a00037</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
 </resources>
+
+    <!--<resources>-->
+    <!--  <color name="colorPrimary">#008FFF</color>-->
+    <!--  <color name="colorPrimaryDark">#1B1F20</color>-->
+    <!--  <color name="colorAccent">#E91E63</color>-->
+    <!--</resources>-->
